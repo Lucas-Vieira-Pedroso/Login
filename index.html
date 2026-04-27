@@ -13,18 +13,22 @@
             </header>
         
             <main>
-                <h2>Login genérico.com</h2>
+                <h2 id="titulo">Login genérico.com</h2>
                 <form id="form-login">
                 <div class="form-floating mb-3">
-          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-          <label for="floatingInput">Email address</label>
+          <input type="email" class="form-control" id="email" placeholder="name@example.com">
+          <label for="email">Email address</label>
         </div>
         <div class="form-floating">
-          <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-          <label for="floatingPassword">Password</label>
+          <input type="password" class="form-control" id="senha" placeholder="Password">
+          <label for="senha">Password</label>
         </div>
                 </form>
-        <button type="button" class="btn btn-dark">Entrar</button>
+                <div id="mensagem"></div>
+                <div class="toggle" id="toggle">
+                    <p>Não tem conta cadastrese</p>
+                </div>
+        <button id="botao-envio" type="submit" class="btn btn-dark">Entrar</button>
             </main>
         
             <footer>
