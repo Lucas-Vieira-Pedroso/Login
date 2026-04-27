@@ -8,16 +8,16 @@
 <body>
     <div class="position-absolute top-50 start-50 translate-middle">
 
-        <div class="text-bg-primary p-3">
+        <div class="text-bg-primary p-3  rounded-4 shadow  mx--5">
             
                 <header>
                     <nav></nav>
                 </header>
             
                 <main class="justify-middle top-50 position-absolute-y">
-                    <h2 id="titulo" class="text-center">Login genérico.com</h2>
+                    <h2 class="text-center mb-3"id="titulo">Login</h2>
                     <form class="container-xxl" id="form-login">
-                    <div class="form-floating mb-3">
+                    <div class="form-floating">
               <input type="email" class="form-control shadow p-3 mb-5 bg-body-tertiary rounded" id="email" placeholder="name@example.com">
               <label for="email">Email</label>
             </div>
@@ -25,21 +25,21 @@
               <input type="password" class="form-control shadow p-3 mb-5 bg-body-tertiary rounded" id="senha" placeholder="Password">
               <label for="senha">Senha</label>
             </div>
-            <div id="mensagem text-center"></div>
+            <button id="botao-envio" type="submit" class="btn btn-dark vstack gap-2 col-md-5 mx-auto">Entrar</button>
+            <div id="mensagem" class="text-center m-3"></div>
             <div class="toggle text-center" id="toggle">
                 <p>Não tem conta cadastre-se</p>
-            </div>
-    <button id="botao-envio" type="submit" class="btn btn-dark vstack gap-2 col-md-5 mx-auto">Entrar</button>
+        </div>
                     </form>
                     <a class="link-light" href="https://docs.google.com/document/d/1jKLgBS5li9xooB0eBfPzwJ-DLmo604WilqItqZlrtjA/edit?usp=sharing">Esqueceu sua senha?</a>
                 </main>
             
-                <footer>
-                </footer>
-    
+                
+            </div>
+            <footer>
+                <p>Todos os Direitos Reservados a Daniel Tonioti e Lucas Vieira Pedroso</p>
+            </footer>
         </div>
-        <p>Direitos reservados a Lucas Vieira Pedroso e Daniel Tonioti</p>
-    </div>
 
 <script src="script.js"></script>
 </body>
