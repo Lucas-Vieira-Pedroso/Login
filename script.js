@@ -21,25 +21,25 @@ document.getElementById("form-login").onsubmit = (e) => {
     mensagem.innerHTML = "";
 
     if (!email.includes("@") || !email.includes(".")) {
-        mensagem.innerHTML = "<div class='erro'><p> Email Inválido!</p></div>";
+        mensagem.innerHTML = "<div><p> Email Inválido!</p></div>";
         return;
     }
     
     if (senha.length < 4) {
-        mensagem.innerHTML = "<div class='erro'><p> Senha muito curta!</p></div>";
+        mensagem.innerHTML = "<div><p> Senha muito curta!</p></div>";
         return;
     }
 
     if (cadastro) {
         localStorage.setItem(email, senha);
-        mensagem.innerHTML = "<div class='sucesso'><p> Cadastrado com sucesso!</p></div>";
+        mensagem.innerHTML = "<div><p> Cadastrado com sucesso!</p></div>";
     } else {
         let salva = localStorage.getItem(email);
         if (salva === senha) {
-            mensagem.innerHTML = "<div class='sucesso'><p>Login com sucesso!</p></div>";
+            mensagem.innerHTML = "<div><p>Login com sucesso!</p></div>";
         } else {
-            mensagem.innerHTML = "<div class='erro'><p>Dados Incorretos!</p></div>";
+            mensagem.innerHTML = "<div><p>Dados Incorretos!</p></div>";
         }
     }
-    document.getElementById("form").reset();
+    document.getElementById("form-login").reset();
 }
